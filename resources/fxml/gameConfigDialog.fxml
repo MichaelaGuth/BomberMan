@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="534.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="main.dialogs.GameConfigDialogController">
+    <children>
+        <Label
+                text="Number of players:"
+                AnchorPane.leftAnchor="30.0"
+                AnchorPane.topAnchor="40.0"/>
+        <ChoiceBox
+                fx:id="NumberOfPlayersChoiceBox"
+                prefWidth="150.0"
+                AnchorPane.leftAnchor="172.0"
+                AnchorPane.topAnchor="36.0"/>
+        <Label
+                text="Number of rounds:"
+                AnchorPane.leftAnchor="30.0"
+                AnchorPane.topAnchor="80.0"/>
+        <ChoiceBox
+                fx:id="NumberOfRoundsChoiceBox"
+                prefWidth="150.0"
+                AnchorPane.leftAnchor="172.0"
+                AnchorPane.topAnchor="76.0"/>
+        <Label
+                text="Number of AI opponents:"
+                AnchorPane.leftAnchor="30.0"
+                AnchorPane.topAnchor="120.0"/>
+        <ChoiceBox
+                fx:id="NumberOfAIOpponentsChoiceBox"
+                layoutX="172.0"
+                layoutY="116.0"
+                prefWidth="150.0"/>
+        <Label
+                text="Player_1 character:"
+                AnchorPane.leftAnchor="30.0"
+                AnchorPane.topAnchor="160.0"/>
+        <ChoiceBox
+                fx:id="Player1_CharacterSelect"
+                layoutX="172.0"
+                layoutY="156.0"
+                prefWidth="150.0"/>
+        <ImageView
+                fx:id="Player1_Pic"
+                fitHeight="100.0"
+                fitWidth="100.0"
+                layoutX="370.0"
+                layoutY="159.0"
+                AnchorPane.rightAnchor="30.0"
+                AnchorPane.topAnchor="160.0"/>
+        <Label
+                fx:id="Player2_CharacterLabel"
+                text="Player_2 character:"
+                AnchorPane.leftAnchor="30.0"
+                AnchorPane.topAnchor="280.0"/>
+        <ChoiceBox
+                fx:id="Player2_CharacterSelect"
+                layoutX="172.0"
+                layoutY="276.0"
+                prefWidth="150.0"/>
+        <ImageView
+                fx:id="Player2_Pic"
+                fitHeight="100.0"
+                fitWidth="100.0"
+                AnchorPane.rightAnchor="30.0"
+                AnchorPane.topAnchor="280.0"/>
+        <Label
+                text="Player_1 username:"
+                AnchorPane.leftAnchor="30.0"
+                AnchorPane.topAnchor="200.0"/>
+        <TextField
+                fx:id="Player1_UsernameTextBox"
+                layoutX="172.0"
+                layoutY="196.0"
+                prefWidth="150.0"/>
+        <Label
+                fx:id="Player2_UsernameLabel"
+                text="Player_2 username:"
+                AnchorPane.leftAnchor="29.0"
+                AnchorPane.topAnchor="320.0"/>
+        <TextField
+                fx:id="Player2_UsernameTextBox"
+                layoutX="172.0"
+                layoutY="316.0"
+                prefWidth="150.0"/>
+        <ImageView
+                fx:id="ContinueButton"
+                fitHeight="34"
+                fitWidth="170"
+                onMouseClicked="#continueButtonClick"
+                onMouseEntered="#continueButtonOnMouseEntered"
+                onMouseExited="#continueButtonOnMouseExited"
+                AnchorPane.bottomAnchor="30"
+                AnchorPane.rightAnchor="30"/>
+        <ImageView
+                fx:id="BackButton"
+                fitHeight="34"
+                fitWidth="170"
+                onMouseClicked="#backButtonClick"
+                onMouseEntered="#backButtonOnMouseEntered"
+                onMouseExited="#backButtonOnMouseExited"
+                AnchorPane.bottomAnchor="30"
+                AnchorPane.leftAnchor="30"/>
+        <Label
+                layoutX="53.0" 
+                layoutY="424.0"
+                text="Game Board:"
+                AnchorPane.leftAnchor="30.0"
+                AnchorPane.topAnchor="400.0"/>
+        <ChoiceBox
+                fx:id="GameBoardChoiceBox"
+                layoutX="172.0"
+                layoutY="396.0"
+                prefWidth="150.0"/>
+    </children>
+</AnchorPane>

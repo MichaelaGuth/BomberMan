@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane
+        maxHeight="722.0" maxWidth="922.0" minHeight="722.0" minWidth="922.0" prefHeight="722.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.game.GameController">
+    <children>
+        <ImageView
+                fx:id="infoBoard"
+                fitHeight="722"
+                fitWidth="200"
+                AnchorPane.bottomAnchor="0"
+                AnchorPane.leftAnchor="0" />
+
+        <ImageView
+                fx:id="backButton"
+                fitHeight="34.0"
+                fitWidth="170.0"
+                onMouseClicked="#backButtonClick"
+                onMouseEntered="#backButtonOnMouseEntered"
+                onMouseExited="#backButtonOnMouseExited"
+                AnchorPane.bottomAnchor="16.0"
+                AnchorPane.leftAnchor="15.0" />
+
+        <ImageView
+                fx:id="soundButton"
+                fitHeight="34.0"
+                fitWidth="170.0"
+                onMouseClicked="#soundButtonClick"
+                onMouseEntered="#soundButtonOnMouseEntered"
+                onMouseExited="#soundButtonOnMouseExited"
+                AnchorPane.bottomAnchor="66.0"
+                AnchorPane.leftAnchor="15.0" />
+
+        <ImageView
+                fx:id="player1Picture"
+                fitHeight="100.0"
+                fitWidth="100.0"
+                AnchorPane.leftAnchor="15.0"
+                AnchorPane.topAnchor="15.0" />
+
+        <ImageView
+                fx:id="player1Stats"
+                fitHeight="30.0"
+                fitWidth="170.0"
+                AnchorPane.leftAnchor="15.0"
+                AnchorPane.topAnchor="115.0" />
+
+        <ImageView
+                fx:id="player2Picture"
+                fitHeight="100.0"
+                fitWidth="100.0"
+                AnchorPane.leftAnchor="15"
+                AnchorPane.topAnchor="160.0" />
+
+        <ImageView
+                fx:id="player2Stats"
+                fitHeight="30.0"
+                fitWidth="170.0"
+                AnchorPane.leftAnchor="15.0"
+                AnchorPane.topAnchor="260.0" />
+
+        <ImageView
+                fx:id="player3Picture"
+                fitHeight="100.0"
+                fitWidth="100.0"
+                AnchorPane.leftAnchor="15"
+                AnchorPane.topAnchor="305.0" />
+
+        <ImageView
+                fx:id="player3Stats"
+                fitHeight="30.0"
+                fitWidth="170.0"
+                AnchorPane.leftAnchor="15"
+                AnchorPane.topAnchor="405.0" />
+
+        <ImageView
+                fx:id="player4Picture"
+                fitHeight="100.0"
+                fitWidth="100.0"
+                AnchorPane.leftAnchor="15"
+                AnchorPane.topAnchor="450" />
+
+        <ImageView
+                fx:id="player4Stats"
+                fitHeight="30.0"
+                fitWidth="170.0"
+                AnchorPane.leftAnchor="15"
+                AnchorPane.topAnchor="550.0" />
+
+        <Canvas
+                fx:id="gamePlan"
+                height="722.0"
+                width="722.0"
+                AnchorPane.bottomAnchor="0.0"
+                AnchorPane.rightAnchor="0.0"
+                AnchorPane.topAnchor="0.0" />
+      <Label
+              text="SCORE:"
+              textFill="white"
+              AnchorPane.leftAnchor="120.0"
+              AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label
+              fx:id="Player1ScoreLabel"
+              text="0"
+              textFill="white"
+              AnchorPane.leftAnchor="120.0"
+              AnchorPane.topAnchor="45.0">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </Label>
+      <Label
+              text="SCORE:"
+              textFill="white"
+              AnchorPane.leftAnchor="120.0"
+              AnchorPane.topAnchor="165.0">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label
+              fx:id="Player3Label"
+              text="SCORE:"
+              textFill="white"
+              AnchorPane.leftAnchor="120.0"
+              AnchorPane.topAnchor="310.0">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label
+              fx:id="Player4Label"
+              text="SCORE:"
+              textFill="white"
+              AnchorPane.leftAnchor="120.0"
+              AnchorPane.topAnchor="455.0">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label
+              fx:id="Player2ScoreLabel"
+              text="0"
+              textFill="white"
+              AnchorPane.leftAnchor="120.0"
+              AnchorPane.topAnchor="190.0">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </Label>
+      <Label
+              fx:id="Player3ScoreLabel"
+              text="0"
+              textFill="white"
+              AnchorPane.leftAnchor="120.0"
+              AnchorPane.topAnchor="335.0">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </Label>
+      <Label
+              fx:id="Player4ScoreLabel"
+              text="0"
+              textFill="white"
+              AnchorPane.leftAnchor="120.0"
+              AnchorPane.topAnchor="480.0">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.dialogs.GameOverDialogController">
+    <children>
+        <ImageView
+                fx:id="GameOver"
+                fitHeight="200.0"
+                fitWidth="400.0" />
+        <Label fx:id="Username1" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="240.0">
+            <font>
+                <Font name="Lucida Console" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="Score1" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="240.0">
+            <font>
+                <Font name="Lucida Console" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="Username2" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="280.0">
+            <font>
+                <Font name="Lucida Console" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="Score2" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="280.0">
+            <font>
+                <Font name="Lucida Console" size="12.0" />
+            </font>
+        </Label>
+        <Button fx:id="backToMenuButton" onMouseClicked="#backToMenuButtonClick" prefWidth="150.0" text="Back to Menu" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0">
+            <font>
+                <Font name="Lucida Console" size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="saveHighScoreButton" onMouseClicked="#saveHighScoreButtonClick" prefWidth="150.0" text="Save High Score" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0">
+            <font>
+                <Font name="Lucida Console" size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

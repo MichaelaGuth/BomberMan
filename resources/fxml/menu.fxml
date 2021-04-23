@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="main.menu.MenuController"
+            prefHeight="722.0"
+            prefWidth="922.0" >
+    <children>
+        <ImageView fx:id="Background"
+                   fitHeight="722.0"
+                   fitWidth="922.0"
+                   AnchorPane.leftAnchor="0.0"
+                   AnchorPane.topAnchor="0.0"/>
+        <ImageView fx:id="NewGameButton"
+                   fitHeight="34.0"
+                   fitWidth="170.0"
+                   onMouseClicked="#newGameButtonClick"
+                   onMouseEntered="#newGameButtonOnMouseEntered"
+                   onMouseExited="#newGameButtonOnMouseExited"
+                   AnchorPane.bottomAnchor="200.0"
+                   AnchorPane.leftAnchor="376.0"
+                   AnchorPane.rightAnchor="376.0"/>
+        <ImageView fx:id="TutorialButton"
+                   fitHeight="34.0"
+                   fitWidth="170.0"
+                   onMouseClicked="#tutorialButtonClick"
+                   onMouseEntered="#tutorialButtonOnMouseEntered"
+                   onMouseExited="#tutorialButtonOnMouseExited"
+                   AnchorPane.bottomAnchor="150.0"
+                   AnchorPane.leftAnchor="376.0"
+                   AnchorPane.rightAnchor="376.0"/>
+        <ImageView fx:id="ScoreButton"
+                   fitHeight="34.0"
+                   fitWidth="170.0"
+                   onMouseClicked="#scoreButtonClick"
+                   onMouseEntered="#scoreButtonOnMouseEntered"
+                   onMouseExited="#scoreButtonOnMouseExited"
+                   AnchorPane.bottomAnchor="100.0"
+                   AnchorPane.leftAnchor="376.0"
+                   AnchorPane.rightAnchor="376.0"/>
+        <ImageView fx:id="ExitButton"
+                   fitHeight="34.0"
+                   fitWidth="170.0"
+                   onMouseClicked="#exitButtonClick"
+                   onMouseEntered="#exitButtonOnMouseEntered"
+                   onMouseExited="#exitButtonOnMouseExited"
+                   AnchorPane.bottomAnchor="50.0"
+                   AnchorPane.leftAnchor="376.0"
+                   AnchorPane.rightAnchor="376.0"/>
+        <ImageView fx:id="BomberMan"
+                   fitHeight="400.0"
+                   fitWidth="820.0"
+                   AnchorPane.bottomAnchor="250.0"
+                   AnchorPane.leftAnchor="51.0"
+                   AnchorPane.rightAnchor="51.0"/>
+    </children>
+</AnchorPane>
